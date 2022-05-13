@@ -13,6 +13,6 @@ jobs:
     - name: Create or Update Project Card
       uses: peter-evans/create-or-update-project-card@v2
       with:
-        project-name: TODO PUT PROJECT NAME HERE
+        project-name: gmaif_workflows
         column-name: Review in progress
         issue-number: ${{ github.event.number }}
