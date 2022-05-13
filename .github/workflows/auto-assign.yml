@@ -1,0 +1,27 @@
+name: Auto-Assign
+
+on:
+  issues:
+    types: [opened]
+  pull_request:
+    types: [opened]
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+jobs:
+  assign:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Assign Issue
+      if: github.event_name == 'issues' && github.event.action == 'opened'
+      uses: srggrs/assign-one-project-github-action@1.3.1
+      with:
+        project: TODO PUT PROJECT URL HERE
+        column_name: 'To do'
+        
+    - name: Assign PR
+      if: github.event_name == 'pull_request' && github.event.action == 'opened'
+      uses: srggrs/assign-one-project-github-action@1.3.1
+      with:
+        project: TODO PUT PROJECT URL HERE
+        column_name: 'In progress'
