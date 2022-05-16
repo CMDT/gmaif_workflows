@@ -1,6 +1,6 @@
 # GMAIF Workflows
 
-Workflows used by the Greater Manchester AI Foundry[^1] to manage OS repositories. They automatically add issues, pull requests, and review requests to project boards (for a repository) created using the 'Automated kanban with reviews' template.
+Workflows used by the Greater Manchester AI Foundry[^1] to manage Open-Source repositories. They automatically add issues, pull requests, and review requests to project boards (for a repository) created using the 'Automated kanban with reviews' template.
 
 ## Auto-Assign Workflow
 
